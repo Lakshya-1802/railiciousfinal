@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.css"
-import ReviewsCarousel from '../Reviewcard/review'
+// import ReviewsCarousel from '../Reviewcard/review'
 import back from '../Images/HomeHeader.jpg'
 import snacks from '../Images/Delicacies/Veg.jpg'
 import chinese from '../Images/Delicacies/chinese.jpg'
@@ -99,9 +99,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonals */}
+    
 
-      <ReviewsCarousel />
+      {/* <ReviewsCarousel /> */}
 
     </div>
   )

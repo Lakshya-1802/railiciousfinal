@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import './reservation.css'
 import { toast } from "react-toastify";
-import {useNavigate} from "react-router-dom";
+// import {useNavigate} from "react-router-dom";
 
 
 const Reservation = () => {
-    const navigate =useNavigate();
-    // const [samp,setSamp] =useState("")
-    // useEffect(()=>{
-    //     const authToken = localStorage?.getItem('Authorization')?.replaceAll('"', "");
-    //     if (authToken) {
-    //       setSamp(authToken);
-    //     }
-    // },[])
+    // const navigate =useNavigate();
+ 
     const [data,setData]= useState({
         name:"",
         contactNo:'',

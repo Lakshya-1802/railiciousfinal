@@ -17,7 +17,7 @@ const career = () => {
               <div className="service">
                 <img src={img1} alt="Service 1" />
                 <h3>Master Chef</h3>
-                {/* <p>Make your wedding memorable with our exquisite catering options.</p> */}
+                
               </div>
             </div>
             <div className="col-sm-6 col-md-4">

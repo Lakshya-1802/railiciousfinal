@@ -50,38 +50,7 @@ function Food() {
           )}
         </div>
       </div>
-
-      {/* <div className="container-fluid">
-
-        <div className="row ">
-          <div className="column">
-            <img src={img1} />
-            <img src={img2} />
-            <img src={img3} />
-            <img src={img4} />
-          </div>
-          <div className="column">
-            <img src={img5} />
-            <img src={img6} />
-            <img src={img7} />
-            <img src={img8} />
-          </div>
-          <div className="column">
-            <img src={img9} />
-            <img src={img10} />
-            <img src={img11} />
-            <img src={img12} />
-          </div>
-          <div className="column">
-            <img src={img13} />
-            <img src={img14} />
-            <img src={img15} />
-            <img src={img16} />
-          </div>
-
-        </div>
-      </div> */}
-    </>
+      </>
   )
 }
 
