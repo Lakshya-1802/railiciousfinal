@@ -1,0 +1,31 @@
+.about-us {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-us video {
+    width: 100%;
+    
+    max-height: 360px;
+    
+  }
+  
+  .about-us h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .about-us .row {
+      flex-direction: column;
+    }
+  
+    .about-us video {
+      margin-bottom: 10px;
+    }
+  }
+  
