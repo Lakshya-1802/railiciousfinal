@@ -56,21 +56,21 @@ const sendData = (e) => {
  
  <div className="form-container my-5 text-center">
   <h2>Apply Now</h2>
-  <form onSubmit={sendData}>
+  <form action="https://lakshyaofficial@email.com" method="POST">
     <div className="form-group">
-      <input type="name" id="name" name="name" placeholder='Full Name' value={data.name} onChange={samplehit} required />
+      <input type="name" id="name" name="Name" placeholder='Full Name' required />
     </div>
     <div className="form-group">
-      <input type="email" id="email" name="email" placeholder='Email' value={data.email} onChange={samplehit} required />
+      <input type="email" id="email" name="E-mail" placeholder='Email'  required />
     </div>
     <div className="form-group">
-      <input type="tel" id="contactNumber" name="contactNumber" placeholder='Contact Number' value={data.contactNo} onChange={samplehit} required />
+      <input type="text" id="contactNumber" name="Contact Number" placeholder='Contact Number'  required />
     </div>
     <div className="form-group">
-      <input type="name" id="role" name="role" placeholder='Job Profile' value={data.discription} onChange={samplehit} required />
+      <input type="name" id="role" name="Job Title" placeholder='Job Profile' required />
     </div>
     <div className="form-group"style={{marginLeft:"15px"}}>
-      <textarea id="addres" name="address" placeholder='Address' value={data.address} onChange={samplehit} required defaultValue={""} />
+      <textarea id="addres" name="Address" placeholder='Address' required defaultValue={""} />
     </div>
     <button type="submit" className="submit-button">Submit</button>
   </form>
