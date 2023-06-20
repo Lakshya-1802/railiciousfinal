@@ -70,19 +70,19 @@ function Franch () {
                     </div>
                     <div className="col-md-6 mb-margin-bottom-25 mr-5px" >
                         <h2 className='text-center' style={{ color: "brown" }}>Get a Franchise Now</h2>
-                        <form action="https://formsubmit.co/cf18775a28f932a250166b2dcabb6ef3" method="POST">
+                        <form action="https://formsubmit.co/lakshyaofficial18@gmail.com" method="POST">
                             <div className="mb-3 text-start">
                                 <input type="text" className="form-control" id="name" placeholder='Name' name="Name" />
                             </div>
                             <div className="mb-3 text-start">
 
-                                <input type="text" className="form-control" id="number" placeholder='Contact Number' name="Contact Number" />
+                                <input type="text" className="form-control" id="number" placeholder='ContactNumber' name="Contact&nbsp;Number" />
                             </div>
                             <div className="mb-3 text-start">
                                 <input type="email" className="form-control" id="email" name='E-mail' placeholder='Enter your email Address' aria-describedby="emailHelp" />
                             </div>
                             <div className="mb-3 text-start">
-                                <input type="text" className="form-control" id="name" placeholder='Where do you want Railicios outlet? ' name='Where do you want Railicios outlet?' />
+                                <input type="text" className="form-control" id="name" placeholder='Where do you want Railicios outlet? ' name='Where&nbsp;do&nbsp;you&nbsp;want&nbsp;Railicios&nbsp;noutlet?' />
                             </div>
                             <div className="mb-3 text-start">
                                 <textarea className="form-control  " name='Message' id="msg" placeholder='Enter your message' cols="30" rows="3" style={{ marginLeft: "12px" }} ></textarea>
