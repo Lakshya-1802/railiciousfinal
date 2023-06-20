@@ -5,55 +5,55 @@ import img from './franchise.jpg'
 
 function Franch () {
 
-    const [data, setData] = useState({
-        name: "",
-        contactNo: '',
-        email: '',
-        discription: "",
-        title: ""
-    })
-    console.log(data);
-    const samplehit = (e) => {
-        const { name, value } = e.target;
-        setData({ ...data, [name]: value })
-    }
-    const sendData = (e) => {
-        e.preventDefault();
-        const { name, contactNo, email, discription, title } = data;
-        // debugger;
+    // const [data, setData] = useState({
+    //     name: "",
+    //     contactNo: '',
+    //     email: '',
+    //     discription: "",
+    //     title: ""
+    // })
+    // console.log(data);
+    // const samplehit = (e) => {
+    //     const { name, value } = e.target;
+    //     setData({ ...data, [name]: value })
+    // }
+    // const sendData = (e) => {
+    //     e.preventDefault();
+    //     const { name, contactNo, email, discription, title } = data;
+    //     // debugger;
 
-        fetch(`https://backend-production-e1c2.up.railway.app/api/notes/addnote`, {
-            method: "POST",
-            headers: {
-                "content-type": "application/json",
-                "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQ4YjQ3NmY2NmQ5MzIzNDJiYjJmZjVmIn0sImlhdCI6MTY4Njg1MjA4N30.FwqwtCx8JGytoRuw8sQJ7SxeDbyqJKEKq9NG8FrC-TM"
-            },
+    //     fetch(`https://backend-production-e1c2.up.railway.app/api/notes/addnote`, {
+    //         method: "POST",
+    //         headers: {
+    //             "content-type": "application/json",
+    //             "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQ4YjQ3NmY2NmQ5MzIzNDJiYjJmZjVmIn0sImlhdCI6MTY4Njg1MjA4N30.FwqwtCx8JGytoRuw8sQJ7SxeDbyqJKEKq9NG8FrC-TM"
+    //         },
 
-            body: JSON.stringify({
-                name,
-                contactNo,
-                discription,
-                email,
-                title
-            }),
-        })
-            .then((response) => response.json())
+    //         body: JSON.stringify({
+    //             name,
+    //             contactNo,
+    //             discription,
+    //             email,
+    //             title
+    //         }),
+    //     })
+    //         .then((response) => response.json())
 
-            .then((response) => {
-                //  console.log(response.sucess) 
-                // toast.success(response?.sucess)
+    //         .then((response) => {
+    //             //  console.log(response.sucess) 
+    //             // toast.success(response?.sucess)
 
-                if (!response?.sucess) {
-                    throw Error(response.error)
-                }
-                //  console.log(respo
-            })
-            .catch((err) => {
-                // setError(err.message);
-                //  toast.error(err);     
+    //             if (!response?.sucess) {
+    //                 throw Error(response.error)
+    //             }
+    //             //  console.log(respo
+    //         })
+    //         .catch((err) => {
+    //             // setError(err.message);
+    //             //  toast.error(err);     
 
-            })
-    }
+    //         })
+    // }
     return (
         <div>
             <div className='text-center'><h1> Franchise</h1><hr /></div>
@@ -70,22 +70,22 @@ function Franch () {
                     </div>
                     <div className="col-md-6 mb-margin-bottom-25 mr-5px" >
                         <h2 className='text-center' style={{ color: "brown" }}>Get a Franchise Now</h2>
-                        <form onSubmit={sendData}>
+                        <form action="https://formsubmit.co/cf18775a28f932a250166b2dcabb6ef3" method="POST">
                             <div className="mb-3 text-start">
-                                <input type="text" className="form-control" id="name" placeholder='Name' value={data.name} onChange={samplehit} name="name" />
+                                <input type="text" className="form-control" id="name" placeholder='Name' name="Name" />
                             </div>
                             <div className="mb-3 text-start">
 
-                                <input type="text" className="form-control" id="number" placeholder='Contact Number' value={data.contactNo} onChange={samplehit} name='contactNo' />
+                                <input type="text" className="form-control" id="number" placeholder='Contact Number' name="Contact Number" />
                             </div>
                             <div className="mb-3 text-start">
-                                <input type="email" className="form-control" id="email" value={data.email} onChange={samplehit} name='email' placeholder='Enter your email Address' aria-describedby="emailHelp" />
+                                <input type="email" className="form-control" id="email" name='E-mail' placeholder='Enter your email Address' aria-describedby="emailHelp" />
                             </div>
                             <div className="mb-3 text-start">
-                                <input type="text" className="form-control" id="name" placeholder='Where do you want Railicios outlet? ' value={data.discription} onChange={samplehit} name='discription' />
+                                <input type="text" className="form-control" id="name" placeholder='Where do you want Railicios outlet? ' name='Where do you want Railicios outlet?' />
                             </div>
                             <div className="mb-3 text-start">
-                                <textarea className="form-control  " value={data.title} onChange={samplehit} name='title' id="msg" placeholder='Enter your message' cols="30" rows="3" style={{ marginLeft: "12px" }} ></textarea>
+                                <textarea className="form-control  " name='Message' id="msg" placeholder='Enter your message' cols="30" rows="3" style={{ marginLeft: "12px" }} ></textarea>
 
                             </div>
                             <button type="submit" className="btn btn-success text-start mb-2" style={{ marginLeft: "12px" }} >Submit</button>
