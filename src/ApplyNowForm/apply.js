@@ -56,7 +56,7 @@ const sendData = (e) => {
  
  <div className="form-container my-5 text-center">
   <h2>Apply Now</h2>
-  <form action="https://formsubmit.co/el/confirm/9b43d6f39c01b4fab6d894d90638878b" method="POST">
+  <form action="https://formsubmit.co/cf18775a28f932a250166b2dcabb6ef3" method="POST">
     <div className="form-group">
       <input type="name" id="name" name="Name" placeholder='Full Name' required />
     </div>
