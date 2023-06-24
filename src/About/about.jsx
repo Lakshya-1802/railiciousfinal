@@ -6,7 +6,7 @@ const about = () => {
     <div>
       <section className="about-us">
         <div className="container">
-          <div className='text-center'><h1>About us <hr /></h1> </div>
+          <div className='text-center'><h1>About Railicious <hr /></h1> </div>
           <div className="row">
             <div className="col-md-6">
 

@@ -2,15 +2,7 @@
 import React,{useState,useEffect,useRef} from 'react'
 
 import "./gallery.css"
-// import A1 from '../Images/Galleryimg/Gallerypage/A1.jpg'
-// import A2 from '../Images/Galleryimg/Gallerypage/A2.jpg'
-// import A3 from '../Images/Galleryimg/Gallerypage/A3.jpg'
-// import F1 from '../Images/Delicacies/veg (2).jpg'
-// import F2 from '../Images/Delicacies/sizzler.jpg'
-// import F3 from '../Images/Delicacies/pizza.jpg'
-// import V1 from '../Images/Galleryimg/Videosgallery/video1.mp4'
-// import V2 from '../Images/Galleryimg/Videosgallery/video2.mp4'
-// import V3 from '../Images/Galleryimg/Videosgallery/video3.mp4'
+
 
 
 import { Link } from 'react-router-dom'
@@ -24,6 +16,11 @@ const Gallery = () => {
     { id: 3, img: "/Images/Galleryimg/Gallerypage/A3.jpg" },
   ]
   const food = [
+    { id: 1, img: "/Images/Delicacies/veg (2).jpg" },
+    { id: 2, img: "/Images/Delicacies/sizzler.jpg" },
+    { id: 3, img: "/Images/Delicacies/pizza.jpg" },
+  ]
+  const guest = [
     { id: 1, img: "/Images/Delicacies/veg (2).jpg" },
     { id: 2, img: "/Images/Delicacies/sizzler.jpg" },
     { id: 3, img: "/Images/Delicacies/pizza.jpg" },
@@ -51,7 +48,27 @@ const Gallery = () => {
     <>
       <div ><h1 className='text-center'>Check Out Our Gallery </h1><hr /></div>
       <div>
-        {/* AMBIENCE */}
+        {/* guests */}
+        <section className="delicacies">
+          <h2>Our Happy Customers !!</h2>
+
+
+          <div className="row delicacies-row">
+            {
+              guest.map((image) => (
+                <div className="col-sm-6 col-md-4 delicacy">
+                  <img src={image.img} alt="Delicacy 1" />
+                </div>
+              ))
+            }
+
+          </div>
+          <Link to='/publicimages'>
+            <button type="button" className="btn btn-secondary">More</button>
+          </Link>
+
+        </section>
+           {/* AMBIENCE */}
         <section className="delicacies">
           <h2>Our Ambience</h2>
 

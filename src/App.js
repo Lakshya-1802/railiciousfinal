@@ -15,6 +15,7 @@ import VideoGallery from './Gallery/videosgallery'
 import Login from './Login/Login';
 import Siginin from './Createaccount/Signin';
 import Applynow from './ApplyNowForm/apply';
+import PublicImages from './Gallery/publicimages';
 import {
   BrowserRouter,
   Routes,
@@ -39,6 +40,7 @@ function App() {
     <Route path='/contact' element = {<Contact/>}/>
     <Route path='/foodgallery' element={<FoodGallery/>}/>
     <Route path='/ambiencegallery' element={<AmbienceGallery/>}/>
+    <Route path='/publicimages' element={<PublicImages/>}/>
     <Route path='/videogallery' element={<VideoGallery/>}/>
     <Route path='/applyform' element={<Applynow/>}/>
       </Routes>

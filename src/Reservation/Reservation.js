@@ -88,13 +88,20 @@ const Reservation = () => {
 
                             <select name = "selectHour"  value={data.selectHour} onChange={samplehit}>
                                 <option value = "hour-select">Select Hour</option>
-                                <option value = "10">10: 00</option>
-                                <option value = "10">12: 00</option>
-                                <option value = "10">14: 00</option>
-                                <option value = "10">16: 00</option>
-                                <option value = "10">18: 00</option>
-                                <option value = "10">20: 00</option>
-                                <option value = "10">22: 00</option>
+                                
+                                <option value = "10">12: 00 PM</option>
+                                <option value = "10">13: 00 PM</option>
+                                <option value = "10">14: 00 PM</option>
+                                <option value = "10">15: 00 PM</option>
+                                <option value = "10">16: 00 PM</option>
+                                <option value = "10">17: 00 PM</option>
+                                <option value = "10">18: 00 PM</option>
+                                <option value = "10">19: 00 PM</option>
+                                <option value = "10">20: 00 PM</option>
+                                <option value = "10">21: 00 PM</option>
+                                <option value = "10">22: 00 PM</option>
+                                
+                                
                             </select>
                         </div>
 
