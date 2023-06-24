@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import AboutInvester from './AboutInvester';
 const about = () => {
   return (
     <div>
@@ -25,7 +26,11 @@ const about = () => {
           </div>
         </div>
       </section>
+      <AboutInvester/>
+
+
       <div className='text-center' style={{ fontWeight: "bold", fontSize: "3rem" }}>Our Journey ...</div>
+      
       {/* Timeline */}
 
       <Timeline lineColor={'#ddd'}>

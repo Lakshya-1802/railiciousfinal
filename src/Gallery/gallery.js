@@ -63,6 +63,9 @@ const Gallery = () => {
             }
 
           </div>
+          {/* <a href='https://drive.google.com/drive/folders/1PM9XIIIKcGUWmIHV64qJakhh-lFO2R3H?usp=sharing'>
+            <button type="button" className="btn btn-secondary">More</button>
+          </a> */}
           <Link to='/publicimages'>
             <button type="button" className="btn btn-secondary">More</button>
           </Link>
