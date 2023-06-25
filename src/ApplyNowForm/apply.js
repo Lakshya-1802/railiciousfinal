@@ -79,7 +79,7 @@ function Apply() {
             <input type="text" id="contactNumber" name="Contact&nbsp;Number" placeholder='Contact Number' required />
           </div>
           <div className="form-group">
-            <input type="name" id="role" name="Job&nbsp;Title" placeholder='Job Profile' required />
+            <input type="name" id="role" name="Job&nbsp;Title" placeholder='Job Role' required />
           </div>
           <div className="form-group" style={{ marginLeft: "15px" }}>
             <textarea id="addres" name="Address" placeholder='Address' required defaultValue={""} />

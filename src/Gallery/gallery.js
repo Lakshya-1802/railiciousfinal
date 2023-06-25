@@ -49,7 +49,7 @@ const Gallery = () => {
       <div ><h1 className='text-center'>Check Out Our Gallery </h1><hr /></div>
       <div>
         {/* guests */}
-        <section className="delicacies">
+        {/* <section className="delicacies">
           <h2>Our Happy Customers !!</h2>
 
 
@@ -65,12 +65,12 @@ const Gallery = () => {
           </div>
           {/* <a href='https://drive.google.com/drive/folders/1PM9XIIIKcGUWmIHV64qJakhh-lFO2R3H?usp=sharing'>
             <button type="button" className="btn btn-secondary">More</button>
-          </a> */}
+          </a> }
           <Link to='/publicimages'>
             <button type="button" className="btn btn-secondary">More</button>
           </Link>
 
-        </section>
+        </section> */}
            {/* AMBIENCE */}
         <section className="delicacies">
           <h2>Our Ambience</h2>

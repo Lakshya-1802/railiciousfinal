@@ -8,7 +8,7 @@ function AboutInvester() {
             <div class="container" style={{ marginTop: "5px" }}>
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="section-title" style={{ fontSize: "60px" }}>About Our Investers</h2>
+                        <h2 class="section-title" style={{ fontSize: "60px" }}>About Our Investors</h2>
                         <p class="section-subtitle">{message}</p>
                     </div>
                     <div class="col-sm-6 col-md-4">

@@ -16,6 +16,7 @@ import Login from './Login/Login';
 import Siginin from './Createaccount/Signin';
 import Applynow from './ApplyNowForm/apply';
 import PublicImages from './Gallery/publicimages';
+import Vlog from './Vlog/Vlog'
 import {
   BrowserRouter,
   Routes,
@@ -43,6 +44,7 @@ function App() {
     <Route path='/publicimages' element={<PublicImages/>}/>
     <Route path='/videogallery' element={<VideoGallery/>}/>
     <Route path='/applyform' element={<Applynow/>}/>
+    <Route path='/vlog' element={<Vlog/>}/>
       </Routes>
       <a
         href="https://wa.me/919958055600"

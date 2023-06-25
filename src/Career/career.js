@@ -1,10 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './career.css'
 import img1 from "../Images/CateringImages/catering1.jpg"
 import img2 from "../Images/CateringImages/catering2.jpg"
 import img3 from "../Images/CateringImages/catering 3.jpg"
 import { Link } from 'react-router-dom'
-const career = () => {
+function Career  ()   {
+  const [data, SetData] = useState([])
+  console.log(data,"harsh sexy");
+  useEffect(() => {
+    fetch(`https://backend-production-e1c2.up.railway.app/api/Image/getallimagesdata3`, {
+
+      method: "GET",
+      headers: {
+        "content-type": "application/json",
+        'Authorization': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQ4YjQ3NmY2NmQ5MzIzNDJiYjJmZjVmIn0sImlhdCI6MTY4Njg1MzE0Mn0._g7VbHLLHvzawjxG3EH8oKIu1c4td3yQ3pOkIgucwfU"
+      },
+    })
+      .then(response => response.json())
+      .then(response => {
+        // dispatch(datasImage(response))
+        SetData(response?.images);
+        console.log(response.images)
+      })
+      .catch(error => {
+        // console.log(error, "joih");
+      });
+  }, [])
+  
 
   return (
     <div>
@@ -38,12 +60,38 @@ const career = () => {
         </div>
       </section>
 
-      <div className='buttonBody'>
-        <Link to="/applyform" className="button">Apply Now</Link>
+     
 
+{/* ------------------------- */}
+
+  <div ><h1 className='text-center'>Current Vacancies</h1><hr /></div>
+  <div className="container-fluid">
+    <div className="row">
+      
+      {data?.map((harsh, index) => {
+        console.log(harsh,"harsh");
+          return(
+             <div className="col-sm-6 col-md-4">
+              <div className="service"  key={index}>
+                <img 
+                src={`https://backend-production-e1c2.up.railway.app/${harsh?.image}`}
+            data-bs-toggle="modal" 
+            alt="Service 2" />
+              </div>
+            </div>
+        
+          )
+      }
+      )}
+    </div>
+  </div>
+
+  <div className='buttonBody'>
+        <Link to="/applyform" className="button">Apply Now</Link>
       </div>
+
     </div>
   )
 }
 
-export default career
+export default Career

@@ -59,6 +59,9 @@ const Footer = () => {
             <p>
               <Link to='/career'className="text-white">Career</Link>
             </p>
+            <p>
+              <Link to='/vlog'className="text-white">Blog</Link>
+            </p>
             
           </div>
 
