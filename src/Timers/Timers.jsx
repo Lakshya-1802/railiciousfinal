@@ -36,7 +36,7 @@ function Timers() {
           // Clear the numbers array to start a new cycle
           setNumbers([]);
         }
-      }, 60*60 * 1000);
+      }, 6 * 1000);
   
       return () => {
         clearInterval(interval);
