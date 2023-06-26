@@ -12,6 +12,7 @@ import kebab from '../Images/Delicacies/kebab.jpg'
 import paneer from '../Images/Delicacies/paneer.jpg'
 import pizza from '../Images/Delicacies/pizza.jpg'
 import veg from '../Images/Delicacies/veg (2).jpg'
+import Timers from '../Timers/Timers'
 
 
 
@@ -98,9 +99,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-    
-
+      <Timers/>
       <ReviewsCarousel />
 
     </div>
