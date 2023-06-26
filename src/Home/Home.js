@@ -99,7 +99,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Timers/>
+      {/* <Timers/> */}
       <ReviewsCarousel />
 
     </div>
