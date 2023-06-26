@@ -1,5 +1,5 @@
 
-import React,{useState,useEffect,useRef} from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 import "./gallery.css"
 
@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 
 const Gallery = () => {
-  
+
   const ambience = [
     { id: 1, img: "/Images/Galleryimg/Gallerypage/A1.jpg" },
     { id: 2, img: "/Images/Galleryimg/Gallerypage/A2.jpg" },
@@ -49,7 +49,7 @@ const Gallery = () => {
       <div ><h1 className='text-center'>Check Out Our Gallery </h1><hr /></div>
       <div>
         {/* guests */}
-        {/* <section className="delicacies">
+        <section className="delicacies">
           <h2>Our Happy Customers !!</h2>
 
 
@@ -63,15 +63,11 @@ const Gallery = () => {
             }
 
           </div>
-          {/* <a href='https://drive.google.com/drive/folders/1PM9XIIIKcGUWmIHV64qJakhh-lFO2R3H?usp=sharing'>
+          <a href='https://drive.google.com/drive/folders/1tTOKHgUUPBfAKjA_-uHNPnvRZm9Opaqy?usp=sharing'>
             <button type="button" className="btn btn-secondary">More</button>
-          </a> }
-          <Link to='/publicimages'>
-            <button type="button" className="btn btn-secondary">More</button>
-          </Link>
-
-        </section> */}
-           {/* AMBIENCE */}
+          </a>
+        </section>
+        {/* AMBIENCE */}
         <section className="delicacies">
           <h2>Our Ambience</h2>
 
@@ -96,14 +92,14 @@ const Gallery = () => {
           <h2> Our Food</h2>
 
           <div className="row delicacies-row">
-          {
+            {
               food.map((img) => (
                 <div className="col-sm-6 col-md-4 delicacy">
                   <img src={img.img} alt="Delicacy 1" />
                 </div>
               ))
             }
-            
+
           </div>
           <Link to='/foodgallery'>
             <button type="button" className="btn btn-secondary">More</button>
@@ -115,20 +111,20 @@ const Gallery = () => {
           <h2>Videos</h2>
 
           <div className="row delicacies-row">
-          {
+            {
               videos.map((video, index) => (
-                <div  key={index}
-                onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={() => handleMouseLeave(index)} className="col-sm-6 col-md-4 delicacy" >
-              <video ref={ref => (videoRefs.current[index] = ref)} className='video' width="216" height="384"  >
-                <source src={video.vid} type="video/mp4" />
-              </video>
-            </div>
-                
+                <div key={index}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={() => handleMouseLeave(index)} className="col-sm-6 col-md-4 delicacy" >
+                  <video ref={ref => (videoRefs.current[index] = ref)} className='video' width="216" height="384"  >
+                    <source src={video.vid} type="video/mp4" />
+                  </video>
+                </div>
+
               ))
             }
 
-            
+
 
 
           </div>
