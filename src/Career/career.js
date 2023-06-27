@@ -8,7 +8,7 @@ function Career  ()   {
   const [data, SetData] = useState([])
   console.log(data,"harsh sexy");
   useEffect(() => {
-    fetch(`https://backend-production-e1c2.up.railway.app/api/Image/getallimagesdata3`, {
+    fetch(`https://therailicious.com//api/Image/getallimagesdata3`, {
 
       method: "GET",
       headers: {
@@ -74,7 +74,7 @@ function Career  ()   {
              <div className="col-sm-6 col-md-4">
               <div className="service"  key={index}>
                 <img 
-                src={`https://backend-production-e1c2.up.railway.app/${harsh?.image}`}
+                src={`https://therailicious.com/${harsh?.image}`}
             data-bs-toggle="modal" 
             alt="Service 2" />
               </div>

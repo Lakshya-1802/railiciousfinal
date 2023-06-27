@@ -26,7 +26,7 @@ const Reservation = () => {
         const { name, contactNo, numberofpeople, setectDate, selectHour } = data;
         // debugger;
 
-        fetch(`https://backend-production-e1c2.up.railway.app/api/notes/addnote`, {
+        fetch(`https://therailicious.com/api/notes/addnote`, {
             method: "POST",
             headers: {
                 "content-type": "application/json",

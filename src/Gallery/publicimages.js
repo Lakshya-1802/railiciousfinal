@@ -6,7 +6,7 @@ function PublicImages  ()  {
   const [data, SetData] = useState([])
   console.log(data,"harsh sexy");
   useEffect(() => {
-    fetch(`https://backend-production-e1c2.up.railway.app/api/Image/getallimagesdata2`, {
+    fetch(`https://therailicious.com/api/Image/getallimagesdata2`, {
 
       method: "GET",
       headers: {
@@ -38,7 +38,7 @@ function PublicImages  ()  {
           <img
             alt="not found"
             className="img img-fluid"
-            src={`https://backend-production-e1c2.up.railway.app/${harsh?.image}`}
+            src={`https://therailicious.com/${harsh?.image}`}
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           />

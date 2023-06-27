@@ -6,7 +6,7 @@ function Videosgallery () {
   const videoRefs = useRef([]);
 
   useEffect(() => {
-    fetch('https://backend-production-e1c2.up.railway.app/api/video/getallvideo', {
+    fetch('https://therailicious.com/api/video/getallvideo', {
       method: 'GET',
       headers: {
         'content-type': 'application/json',
@@ -52,7 +52,7 @@ function Videosgallery () {
               
             >
               <source
-                src={`https://backend-production-e1c2.up.railway.app/${harsh?.video}`}
+                src={`https://therailicious.com/${harsh?.video}`}
                 type="video/mp4"
               />
               Your browser does not support the video tag.

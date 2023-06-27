@@ -6,7 +6,7 @@ function Ambience  ()  {
   const [data, SetData] = useState([])
   console.log(data,"harsh sexy");
   useEffect(() => {
-    fetch(`https://backend-production-e1c2.up.railway.app/api/Image/getallimages`, {
+    fetch(`https://therailicious.com/api/Image/getallimages`, {
 
       method: "GET",
       headers: {
@@ -38,7 +38,7 @@ function Ambience  ()  {
           <img
             alt="not found"
             className="img img-fluid"
-            src={`https://backend-production-e1c2.up.railway.app/${harsh?.image}`}
+            src={`https://therailicious.com/${harsh?.image}`}
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           />
